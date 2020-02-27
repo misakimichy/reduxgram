@@ -3,9 +3,9 @@
 // 2. copy of current state
 
 const posts = ( state = [], action) => {
-    let newState = [...state]
     switch(action.type) {
         case 'INCREMENT_LIKES' :
+            let newState = [...state]
             newState[action.index].likes++
             return newState
         default:
