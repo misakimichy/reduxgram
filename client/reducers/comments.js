@@ -17,7 +17,6 @@ const postComments = ( state = [], action) => {
             }]
         case 'REMOVE_COMMENT':
         let newState = [...state]
-        console.log('REMOVE state', state)
             return [
                 ...state.slice(0, action.i),
                 ...state.slice(action.i + 1)
